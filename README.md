@@ -33,4 +33,5 @@ pd.read_json(r.text, orient = 'columns')
 ```
 
 + 정제 결과
+
 ![예시_네이버](https://user-images.githubusercontent.com/94692007/142629385-414b31b0-fc10-4b56-8bc2-e8063e295aa8.JPG)
