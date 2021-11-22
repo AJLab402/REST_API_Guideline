@@ -41,3 +41,4 @@ df = df[first_col+sec_col]
 
 + 정제 결과
 
+![예시_네이버_rds버전](https://user-images.githubusercontent.com/94692007/142901714-53700060-9d37-4cfc-a72e-feacee7d7c56.JPG)
