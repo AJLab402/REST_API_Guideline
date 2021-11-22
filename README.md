@@ -29,9 +29,15 @@ r.text
 + pandas DataFrame 형태로 정제
 
 ```python
-pd.read_json(r.text, orient = 'columns')
+df = pd.read_json(r.text, orient = 'columns')
+
+# 컬럼 순서 변경
+first_col = list(filter(lambda x: x[0] !=str(2) , df.columns))
+sec_col = list(filter(lambda x: x[0] ==str(2) , df.columns))
+
+df = df[first_col+sec_col]
+# df : 정제 완료된 DataFrame
 ```
 
 + 정제 결과
 
-![예시_네이버](https://user-images.githubusercontent.com/94692007/142629385-414b31b0-fc10-4b56-8bc2-e8063e295aa8.JPG)
