@@ -17,11 +17,11 @@ import requests
 
 + data 다운로드 (json기반)
 
-Ex) 네이버의 2012년 이후 분기별 재무상태표 다운로드(json)
+Ex) 네이버의 2012년 이후 분기별 현금흐름표 다운로드(json)
 ```python
 url = 'https://www.testlab402.com/api'
-# 네이버의 종목코드 035420 / 재무상태표의 타입 값 : FS (손익계산서는 BS, 현금흐름표는 CF)
-params = {'corp_code': 035420,'fs_type': FS}
+# 네이버의 종목코드 035420 / 현금흐름표의 타입 값 : CF (재무상태표는 FS, 손익계산서는 BS)
+params = {'corp_code': 035420,'fs_type': CF}
 r = requests.get(url, params=params)
 r.text
 ```
